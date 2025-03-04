@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Adrian's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/code-background.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+    <!-- Temporary inline CSS if needed -->
+    <style>
+        /* Add any additional styles specific to the contact page here */
+    </style>
+</head>
+<body>
+    <!-- Code Background Effect -->
+<div class="code-background" id="codeBackground"></div>
+
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Adrian<span class="highlight">Dev</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding page-section">
+            <div class="container">
+                <h1 class="page-title">Get In Touch</h1>
+                
+                <div class="contact-intro">
+                    <p>
+                        I'm currently open to new opportunities and collaborations. Whether you have a project in mind, 
+                        a question about my work, or just want to connect, I'd love to hear from you!
+                    </p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:your.email@example.com">adrian.lichtfeldt@gmail.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Location</h3>
+                                    <p>Tallinn, Estonia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p><a href="tel:+1234567890">+372 58606581</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="availability">
+                            <h3>Availability</h3>
+                            <p>I'm currently available for freelance work and full-time positions.</p>
+                            <p>Response time: Within 24-48 hours</p>
+                        </div>
+                        
+                        <div class="social-connect">
+                            <h3>Connect With Me</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/AdrianLicht" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/adrian-lichtfeldt-1658bb225/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h2>Send Me a Message</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn primary-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What types of projects do you work on?</h3>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>
+                                    I specialize in front-end development for websites and web applications. This includes 
+                                    portfolio sites, business websites, e-commerce platforms, and interactive web applications.
+                                    I'm particularly interested in projects that focus on user experience and responsive design.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What is your typical process for new projects?</h3>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>
+                                    My process typically involves an initial consultation to understand your needs, followed by 
+                                    wireframing and design approval. Once the design is finalized, I move on to development, 
+                                    regular check-ins, testing, and finally deployment. I believe in clear communication throughout 
+                                    the entire process.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How do you handle project pricing?</h3>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>
+                                    I offer both hourly rates and project-based pricing depending on the scope and requirements. 
+                                    After our initial discussion, I'll provide a detailed quote that outlines all costs involved. 
+                                    I believe in transparent pricing with no hidden fees.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How long does it typically take to complete a project?</h3>
+                                <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>
+                                    Project timelines vary based on complexity and scope. A simple portfolio site might take 2-3 weeks, 
+                                    while a more complex web application could take 1-2 months. I'll provide a detailed timeline 
+                                    during our initial planning phase and keep you updated on progress throughout the project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Adrian<span class="highlight">Dev</span></a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/AdrianLicht" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adrian-lichtfeldt-1658bb225/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Adrian. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/code-background.js"></script>
+
+</body>
+</html>

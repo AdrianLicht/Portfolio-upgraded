@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian's Portfolio | Front-End Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Code background effect */
+        .code-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.15; /* Increased opacity from 0.07 to 0.15 */
+            overflow: hidden;
+        }
+        
+        .code-line {
+            position: absolute;
+            color: var(--primary-color);
+            font-family: 'Courier New', monospace;
+            font-size: 16px; /* Increased font size from 14px to 16px */
+            font-weight: 600; /* Added font weight for better visibility */
+            white-space: nowrap;
+            text-shadow: 0 0 5px rgba(79, 140, 255, 0.3); /* Added text shadow for glow effect */
+            animation: code-scroll 60s linear infinite;
+        }
+        
+        /* Add different animation directions */
+        .code-line-vertical {
+            animation: code-scroll-vertical 60s linear infinite;
+        }
+        
+        .code-line-diagonal {
+            animation: code-scroll-diagonal 80s linear infinite;
+        }
+        
+        @keyframes code-scroll {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+        
+        @keyframes code-scroll-vertical {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100vw);
+            }
+        }
+        
+        @keyframes code-scroll-diagonal {
+            0% {
+                transform: translate(-100%, -100%);
+            }
+            100% {
+                transform: translate(100vw, 100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Code Background Effect -->
+    <div class="code-background" id="codeBackground"></div>
+    
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Adrian's <span class="highlight">Portfolio</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <div class="container">
+                <h1>Hi, I'm <span class="highlight">Adrian</span></h1>
+                <h2>Self-taught Front-End Developer</h2>
+                
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <p>
+                            Welcome to my portfolio! I'm a passionate front-end developer who has embarked on a self-taught journey 
+                            into the world of web development. My path has been driven by curiosity, determination, and a love for 
+                            creating engaging digital experiences.
+                        </p>
+                        <p>
+                            Why? I was a CAD Designer and felt I was stagnating in my career. I wanted to learn something new and challenging.
+                            I wanted to learn how to build websites and web applications. I wanted to learn how to code.
+                            So here I am, learning how to code and building websites and web applications.
+                        </p>
+                        
+                        <div class="cta-buttons">
+                            <a href="projects.html" class="btn primary-btn">View My Work</a>
+                            <a href="contact.html" class="btn secondary-btn">Get In Touch</a>
+                        </div>
+                    </div>
+                    
+                    <div class="intro-image">
+                        <img src="./img/Profile.jpg" alt="Adrian's Profile Photo" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Projects Preview -->
+        <section id="featured-projects" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-content">
+                    <div class="projects-grid">
+                        <!-- Featured Project 1 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="./img/Portfolio.png" alt="Portfolio Website">
+                            </div>
+                            <div class="project-info">
+                                <h3>Personal Portfolio Website</h3>
+                                <p>A modern, dark-themed portfolio website featuring an interactive code background effect and smooth animations. Built with a focus on clean design and user experience.</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>Responsive Design</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live Site</a>
+                                    <a href="#" class="btn small-btn secondary-btn"><i class="fab fa-github"></i> Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Featured Project 2 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="coming-soon-placeholder">
+                                    <i class="fas fa-clock"></i>
+                                    <p>Coming Soon</p>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Coming soon...</h3>
+                                <p>A weather application that fetches data from a weather API.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>API</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                    <a href="#" class="btn small-btn secondary-btn"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="view-all-projects">
+                        <a href="projects.html" class="btn secondary-btn">View All Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Adrian<span class="highlight">Dev</span></a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/AdrianLicht" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adrian-lichtfeldt-1658bb225/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Adrian. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script>
+        // Code background effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const codeBackground = document.getElementById('codeBackground');
+            const codeSnippets = [
+                "function createExperience() {",
+                "  return passion + hardWork + creativity;",
+                "}",
+                "const portfolio = new Project();",
+                "portfolio.design();",
+                "portfolio.develop();",
+                "portfolio.deploy();",
+                "if (visitor.impressed) {",
+                "  visitor.contact();",
+                "}",
+                "const skills = ['HTML', 'CSS', 'JavaScript'];",
+                "skills.forEach(skill => master(skill));",
+                "document.querySelector('.awesome-portfolio');",
+                "const future = async () => {",
+                "  await learnNewTechnologies();",
+                "  return createAmazingProjects();",
+                "}",
+                "/* This is just the beginning */",
+                "class Developer {",
+                "  constructor() {",
+                "    this.passion = 100;",
+                "    this.coffee = Infinity;",
+                "  }",
+                "}",
+                "<div class='creativity'>No limits</div>",
+                "@keyframes coding {",
+                "  from { knowledge: basic; }",
+                "  to { knowledge: advanced; }",
+                "}",
+                "git commit -m 'Always improving'",
+                "npm install future-skills",
+                "const dream = new Promise((resolve) => {",
+                "  resolve('Never stop learning');",
+                "});",
+                "// Adrian's code",
+                "function buildAmazingWebsites() {",
+                "  const creativity = true;",
+                "  const dedication = 100%;",
+                "}",
+                "export default class FrontEndDev {",
+                "  constructor(name) {",
+                "    this.name = 'Adrian';",
+                "  }",
+                "}"
+            ];
+            
+            // Create more code lines (increased from 25 to 40)
+            for (let i = 0; i < 40; i++) {
+                const line = document.createElement('div');
+                line.className = 'code-line';
+                
+                // Add different animation directions
+                const animationType = Math.floor(Math.random() * 3);
+                if (animationType === 1) {
+                    line.classList.add('code-line-vertical');
+                } else if (animationType === 2) {
+                    line.classList.add('code-line-diagonal');
+                }
+                
+                line.textContent = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
+                
+                // Random positioning
+                line.style.left = `${Math.random() * 100}%`;
+                line.style.top = `${Math.random() * 100}%`;
+                
+                // Higher base opacity (0.6-1.0 instead of 0.5-1.0)
+                line.style.opacity = 0.6 + Math.random() * 0.4;
+                
+                // Random animation duration and delay
+                const duration = 30 + Math.random() * 60;
+                const delay = Math.random() * 30;
+                
+                if (animationType === 0) {
+                    line.style.animation = `code-scroll ${duration}s linear ${delay}s infinite`;
+                } else if (animationType === 1) {
+                    line.style.animation = `code-scroll-vertical ${duration}s linear ${delay}s infinite`;
+                } else {
+                    line.style.animation = `code-scroll-diagonal ${duration}s linear ${delay}s infinite`;
+                }
+                
+                codeBackground.appendChild(line);
+            }
+        });
+        
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            
+            // Close menu when clicking a link
+            document.querySelectorAll('.nav-links li a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

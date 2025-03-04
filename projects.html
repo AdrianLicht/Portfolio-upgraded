@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Adrian's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/code-background.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Code Background Effect -->
+<div class="code-background" id="codeBackground"></div>
+
+    <header id="header">
+        <!-- Same header as other pages -->
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Adrian<span class="highlight">Dev</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Projects Section -->
+        <section id="projects" class="section-padding page-section">
+            <div class="container">
+                <h1 class="page-title">My Projects</h1>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="app">Web Apps</button>
+                    <button class="filter-btn" data-filter="other">Other</button>
+                </div>
+                
+                <div class="section-content">
+                    <div class="projects-grid">
+                        <!-- Project 1 - Current Portfolio -->
+                        <div class="project-card featured-project" data-category="web">
+                            <div class="project-image">
+                                <img src="./img/Portfolio.png" alt="My Portfolio Website" />
+                            </div>
+                            <div class="project-info">
+                                <h3>Portfolio Website</h3>
+                                <p>My personal portfolio website showcasing my projects, skills, and experience. Features a modern dark theme with purple accents, responsive design, and interactive elements.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Responsive Design</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn small-btn"><i class="fas fa-external-link-alt"></i> You're Here!</a>
+                                    <a href="https://github.com/AdrianLicht/portfolio" class="btn small-btn secondary-btn"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2 -->
+                        <div class="project-card" data-category="app">
+                            <div class="project-image">
+                                <div class="coming-soon-placeholder">
+                                    <i class="fas fa-clock"></i>
+                                    <p>Coming Soon</p>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Coming Soon...</h3>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>API</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn small-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                    <a href="#" class="btn small-btn secondary-btn"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Adrian<span class="highlight">Dev</span></a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/AdrianLicht" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adrian-lichtfeldt-1658bb225/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Adrian. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script src="js/code-background.js"></script>
+
+</body>
+</html>
